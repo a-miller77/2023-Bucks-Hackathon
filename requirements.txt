@@ -1,0 +1,4 @@
+Required Python Packages
+
+pandas
+jupyterlab
