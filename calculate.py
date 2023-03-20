@@ -18,7 +18,8 @@ def create_stats_column(df, i, top=top, bottom=bottom, multi_var=False):
             denom = df[f'avg_fga'].iloc[j] - df[f'avg_fga3'].iloc[j]
             result = num/denom
         else:
-            result = df[f'avg_{top}'].iloc[j]/df[f'avg_{bottom}'].iloc[j]
+            result = (df[f'avg_{top}'].iloc[j]/df[f'avg_{bottom}'].iloc[j])
+        result = np.round(result, 3)
         row = np.append(row, [result])
     return row
 
