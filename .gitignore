@@ -2,5 +2,5 @@
 .DS_Store
 
 .ipynb_checkpoints
-
+/venv
 base_data/hackathon_basketball_spec_23.xlsx
